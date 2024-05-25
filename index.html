@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Create Variable with User-Defined Name</title>
+</head>
+
+<body>
+    <script>
+        // Create an empty object to store user-defined variables
+        let userVariables = {};
+
+        // Prompt the user for a variable name
+        let varName = prompt("Enter the name of the variable:");
+
+        // Prompt the user for a variable value
+        let varValue = prompt("Enter the value for the variable:");
+
+        // Create the variable dynamically using the object
+        userVariables[varName] = varValue;
+
+        // Display the variable's name and value
+        console.log("Variable Name: " + varName);
+        console.log("Variable Value: " + userVariables[varName]);
+        alert("Variable " + varName + " created with value: " + userVariables[varName]);
+    </script>
+</body>
+
+</html>
